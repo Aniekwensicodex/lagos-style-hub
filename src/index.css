@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 10% 5%;
+    --foreground: 40 20% 90%;
+
+    --card: 20 8% 10%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 20 8% 10%;
+    --popover-foreground: 40 20% 90%;
+
+    --primary: 40 60% 50%;
+    --primary-foreground: 20 10% 5%;
+
+    --secondary: 20 8% 15%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 20 5% 18%;
+    --muted-foreground: 30 10% 55%;
+
+    --accent: 40 60% 50%;
+    --accent-foreground: 20 10% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 8% 20%;
+    --input: 30 8% 20%;
+    --ring: 40 60% 50%;
+
+    --radius: 0.25rem;
+
+    --gold: 40 60% 50%;
+    --gold-light: 40 50% 65%;
+    --gold-dark: 35 55% 38%;
+    --cream: 40 30% 92%;
+    --charcoal: 20 10% 8%;
+    --charcoal-light: 20 8% 14%;
+
+    --sidebar-background: 20 10% 5%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 40 60% 50%;
+    --sidebar-primary-foreground: 20 10% 5%;
+    --sidebar-accent: 20 8% 15%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 30 8% 20%;
+    --sidebar-ring: 40 60% 50%;
+
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'Montserrat', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--gold)), hsl(var(--gold-dark)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-dark)));
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold) / 0.3);
+  }
+
+  .hover-gold-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--gold) / 0.15);
+  }
+
+  .section-padding {
+    @apply px-6 py-16 md:px-12 lg:px-20 lg:py-24;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold) / 0.3);
+  border-radius: 3px;
+}
