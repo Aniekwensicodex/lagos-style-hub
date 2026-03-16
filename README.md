@@ -1,73 +1,154 @@
-# Welcome to your Lovable project
+# Maison Lagos - Luxury African Fashion
 
-## Project info
+A premium e-commerce platform showcasing handcrafted African fashion for the modern woman and man. Based in Lagos, we blend traditional heritage with contemporary style to create unique, luxury pieces.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## ✨ Features
 
-## How can I edit this code?
+- **E-commerce Store**: Browse and shop our curated collection of luxury African fashion
+- **Responsive Design**: Optimized for all devices with a modern, elegant interface
+- **Product Showcase**: Beautiful product cards with detailed information
+- **Navigation**: Seamless browsing between Home, Collection, About, and Contact pages
+- **WhatsApp Integration**: Direct customer support via WhatsApp button
+- **Modern Animations**: Smooth transitions using Framer Motion
+- **Lagos Delivery**: Free delivery within Lagos metropolitan area
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite for fast development and building
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: shadcn/ui component library
+- **Routing**: React Router DOM for navigation
+- **State Management**: TanStack Query for server state
+- **Animations**: Framer Motion for smooth interactions
+- **Icons**: Lucide React icon library
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v18 or higher)
+- npm or yarn package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+1. Clone the repository:
+```bash
 git clone <YOUR_GIT_URL>
+cd lagos-style-hub-65
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development mode
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint for code quality
+- `npm run test` - Run tests
+- `npm run test:watch` - Run tests in watch mode
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📁 Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Navbar.tsx      # Navigation header
+│   ├── Footer.tsx      # Site footer
+│   ├── ProductCard.tsx # Product display card
+│   └── WhatsAppButton.tsx
+├── pages/              # Route components
+│   ├── Index.tsx       # Home page
+│   ├── CollectionPage.tsx
+│   ├── AboutPage.tsx
+│   ├── ContactPage.tsx
+│   └── NotFound.tsx
+├── data/               # Static data
+│   └── products.ts     # Product catalog
+├── assets/             # Static assets
+└── App.tsx             # Main app component
+```
 
-This project is built with:
+## 🎨 Design System
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The application uses a sophisticated color palette with:
+- **Primary Colors**: Rich gold gradients reflecting African luxury
+- **Typography**: Elegant display fonts paired with clean body fonts
+- **Spacing**: Consistent padding and margins for visual harmony
+- **Components**: Modern, accessible UI components from shadcn/ui
 
-## How can I deploy this project?
+## 📱 Features Overview
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### Home Page
+- Hero section with compelling messaging
+- Featured products showcase
+- Service highlights (handcrafted, delivery, quality)
+- Call-to-action sections
 
-## Can I connect a custom domain to my Lovable project?
+### Collection Page
+- Grid layout of all products
+- Filtering and sorting capabilities
+- Detailed product information
 
-Yes, you can!
+### About Page
+- Brand story and heritage
+- Craftsmanship details
+- Company mission and values
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Contact Page
+- Contact form
+- Location information
+- Business hours
+- Social media links
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🌐 Deployment
+
+### Build for Production
+```bash
+npm run build
+```
+
+The build output will be in the `dist/` directory, ready for deployment to any static hosting service.
+
+### Environment Variables
+Create a `.env` file in the root directory:
+```
+VITE_WHATSAPP_NUMBER=+234XXXXXXXXXX
+VITE_BUSINESS_EMAIL=contact@maisonlagos.com
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is proprietary software. All rights reserved.
+
+## 📞 Contact
+
+- **Email**: contact@maisonlagos.com
+- **Phone**: +234 XXX XXX XXXX
+- **Location**: Lagos, Nigeria
+- **Website**: [www.maisonlagos.com](https://www.maisonlagos.com)
+
+---
+
+*Maison Lagos - Where Heritage Meets Modern Luxury*

@@ -3,24 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Maison Lagos - Luxury African Fashion | Handcrafted in Lagos</title>
+    <meta name="description" content="Discover premium African fashion at Maison Lagos. Handcrafted luxury pieces for the modern woman and man. Free delivery within Lagos. Shop our exclusive collection today." />
+    <meta name="author" content="Maison Lagos" />
+    <meta name="keywords" content="African fashion, luxury clothing, Lagos fashion, handcrafted apparel, traditional wear, modern African style, premium fashion Nigeria" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:url" content="https://www.maisonlagos.com/" />
+    <meta property="og:title" content="Maison Lagos - Luxury African Fashion | Handcrafted in Lagos" />
+    <meta property="og:description" content="Discover premium African fashion at Maison Lagos. Handcrafted luxury pieces for the modern woman and man. Free delivery within Lagos." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Maison Lagos" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:url" content="https://www.maisonlagos.com/" />
+    <meta name="twitter:title" content="Maison Lagos - Luxury African Fashion | Handcrafted in Lagos" />
+    <meta name="twitter:description" content="Discover premium African fashion at Maison Lagos. Handcrafted luxury pieces for the modern woman and man. Free delivery within Lagos." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+    <meta name="twitter:site" content="@MaisonLagosNG" />
+
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="NG-LA" />
+    <meta name="geo.placename" content="Lagos, Nigeria" />
+    <meta name="ICBM" content="6.5244;3.3792" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon5.ico" />
+    <link rel="icon" type="image/png" href="/favicon5.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#D4AF37" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.maisonlagos.com/" />
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FashionStore",
+      "name": "Maison Lagos",
+      "description": "Luxury African fashion boutique specializing in handcrafted pieces for the modern woman and man.",
+      "url": "https://www.maisonlagos.com",
+      "logo": "https://www.maisonlagos.com/logo.png",
+      "image": "https://www.maisonlagos.com/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lagos",
+        "addressCountry": "Nigeria"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "6.5244",
+        "longitude": "3.3792"
+      },
+      "telephone": "+234XXXXXXXXXX",
+      "email": "contact@maisonlagos.com",
+      "priceRange": "$$$",
+      "sameAs": [
+        "https://www.instagram.com/maisonlagos",
+        "https://www.facebook.com/maisonlagos",
+        "https://twitter.com/MaisonLagosNG"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "African Fashion Collection",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Luxury African Fashion"
+            }
+          }
+        ]
+      }
+    }
+    </script>
   </body>
 </html>
